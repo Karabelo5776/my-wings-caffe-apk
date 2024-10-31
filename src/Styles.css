@@ -1,0 +1,203 @@
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #0d1b2a; /* Dark blue background */
+  color: #f5f5f7; /* Light text color for contrast */
+}
+
+/* Main Container */
+.App {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px; /* Increased padding */
+}
+
+/* Authentication Form */
+.auth-form {
+  background: #1b2631; /* Darker blue form background */
+  border-radius: 12px;
+  padding: 40px; /* Increased padding */
+  width: 90%;
+  max-width: 500px; /* Increased width */
+  margin: 50px auto; /* Increased margin */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.3s ease;
+}
+
+.auth-form h2 {
+  font-size: 28px; /* Increased font size */
+  color: #00aaff; /* Neon blue for title */
+  margin-bottom: 30px; /* Increased margin */
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+button {
+  width: 100%;
+  padding: 15px; /* Increased padding */
+  margin-top: 15px;
+  margin-bottom: 25px; /* Increased margin */
+  border: 1px solid #444;
+  border-radius: 10px;
+  background: #1b2631; /* Darker blue input background */
+  color: #f5f5f7;
+  font-size: 18px; /* Larger text for spacing */
+}
+
+/* Buttons */
+button {
+  background-color: #00aaff; /* Bright neon blue */
+  color: black; /* Black text for contrast */
+  padding: 15px 25px; /* Increased padding */
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 170, 255, 0.4);
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transition */
+}
+
+button:hover {
+  background-color: #007bbf; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px; /* Increased padding */
+  border-bottom: 1px solid #444;
+}
+
+.App-logo {
+  height: 120px; /* Enlarged logo */
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px; /* Added margin to separate from nav */
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; /* Added margin for spacing */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+}
+
+nav a {
+  padding: 15px 30px; /* Increased padding */
+  border-radius: 10px;
+  font-size: 18px;
+  color: #00aaff; /* Neon blue */
+  text-decoration: none;
+  background-color: #1b2631; /* Darker blue */
+  box-shadow: 0px 5px 10px rgba(0, 170, 255, 0.3);
+  transition: background-color 0.3s ease; /* Added transition */
+}
+
+nav a:hover {
+  background-color: #007bbf; /* Darker blue on hover */
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  margin-top: 30px; /* Added spacing */
+  border-collapse: collapse;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 8px; /* Adjust for the desired roundness */
+  overflow: hidden; /* Ensures rounded corners are applied to table content */
+}
+
+th, td {
+  padding: 20px; /* Increased padding */
+  border-bottom: 1px solid #444;
+  font-size: 18px;
+  background-color: #1b2631; /* Darker blue table background */
+  color: #f5f5f7; /* Light text color */
+}
+
+/* Card Styling for Sections */
+section {
+  background-color: #1b2631; /* Darker blue for sections */
+  border-radius: 12px;
+  padding: 40px; /* Increased padding */
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+  margin: 30px auto; /* Added margin for spacing */
+}
+
+/* Footer */
+footer {
+  padding: 30px; /* Increased padding */
+  border-top: 1px solid #444;
+  display: flex;
+  justify-content: center;
+}
+
+/* Sign Out Button */
+#signout {
+  padding: 15px 25px; /* Increased padding */
+  background-color: #dc3545; /* Bright red */
+  border-radius: 10px;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+button {
+  width: calc(100% - 30px); /* Adjust width to accommodate padding */
+  padding: 15px; /* Same padding as before */
+  margin-top: 15px;
+  margin-bottom: 25px; /* Increased margin */
+  border: 1px solid #444;
+  border-radius: 10px;
+  background: #2b2f3a;
+  color: #f5f5f7;
+  font-size: 18px; /* Larger text for spacing */
+}
+
+/* Buttons */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 25px; /* Increased padding */
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 123, 255, 0.4);
+  width: calc(100% - 30px); /* Align button width with input fields */
+}
+
+/* Ensure that all buttons have consistent widths */
+.auth-form button {
+  margin-top: 15px; /* Consistent top margin */
+}
+
+#logo {
+    width: 150px;  /* Adjust size as needed */
+    height: auto;  /* Keeps the aspect ratio */
+    margin: 10px;
+}
+
+.App-logo {
+  height: 120px; /* Adjust size as needed */
+  width: 120px;
+  border-radius: 50%; /* Optional: Makes it circular */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px; /* Space between logo and other elements */
+}
+

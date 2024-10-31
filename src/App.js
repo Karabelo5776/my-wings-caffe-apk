@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Auth from './Auth';
+import Dashboard from './Dashboard';
+import './Styles.css'; // Import your CSS file
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [currentUser, setCurrentUser] = useState(null);
+
+    return (
+        <div className="App">
+            {/* Logo Section */}
+            <header>
+                <img src="/logo111.png" alt="Logo" className="App-logo" />
+            </header>
+            {/* Main Content */}
+            {currentUser ? (
+                <Dashboard currentUser={currentUser} setCurrentUser={setCurrentUser} />
+            ) : (
+                <Auth setCurrentUser={setCurrentUser} />
+            )}
+        </div>
+    );
 }
 
 export default App;
